@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D02F190C16D31F8D004F5817 /* MotionControlHelper.sdef in Resources */ = {isa = PBXBuildFile; fileRef = D02F190916D31F8D004F5817 /* MotionControlHelper.sdef */; };
+		D02F190E16D31F9C004F5817 /* MotionControlInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = D02F190D16D31F9C004F5817 /* MotionControlInjector.m */; };
+		D02F191416D32024004F5817 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = D02F191316D32024004F5817 /* Test.m */; };
+		D02F191816D32219004F5817 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D02F191716D32219004F5817 /* libLeap.dylib */; };
+		D08B941816D2D2DB003C817F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E5244A16D2CF7D003C8160 /* Cocoa.framework */; };
+		D08B945016D2E2C2003C817F /* MotionControl.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D0E5244716D2CF7D003C8160 /* MotionControl.bundle */; };
+		D0C919A716D3227800AD3775 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = D0C919A616D3227800AD3775 /* LeapObjectiveC.mm */; };
+		D0E5244B16D2CF7D003C8160 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E5244A16D2CF7D003C8160 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D08B945116D2E2C6003C817F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0E5243F16D2CF7D003C8160 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0E5244616D2CF7D003C8160;
+			remoteInfo = MotionControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D02F190816D31F8D004F5817 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Helper/Info.plist; sourceTree = SOURCE_ROOT; };
+		D02F190916D31F8D004F5817 /* MotionControlHelper.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = MotionControlHelper.sdef; path = Helper/MotionControlHelper.sdef; sourceTree = SOURCE_ROOT; };
+		D02F190A16D31F8D004F5817 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Helper/Prefix.pch; sourceTree = SOURCE_ROOT; };
+		D02F190D16D31F9C004F5817 /* MotionControlInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MotionControlInjector.m; path = Helper/MotionControlInjector.m; sourceTree = SOURCE_ROOT; };
+		D02F190F16D31FFE004F5817 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		D02F191016D31FFE004F5817 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = SOURCE_ROOT; };
+		D02F191216D32024004F5817 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Test.h; path = Classes/Test.h; sourceTree = SOURCE_ROOT; };
+		D02F191316D32024004F5817 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Test.m; path = Classes/Test.m; sourceTree = SOURCE_ROOT; };
+		D02F191716D32219004F5817 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = Leap_SDK/lib/libLeap.dylib; sourceTree = SOURCE_ROOT; };
+		D08B941716D2D2DB003C817F /* MotionControlHelper.osax */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionControlHelper.osax; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0C919A516D3227800AD3775 /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapObjectiveC.h; path = Leap_SDK/include/LeapObjectiveC.h; sourceTree = SOURCE_ROOT; };
+		D0C919A616D3227800AD3775 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LeapObjectiveC.mm; path = Leap_SDK/include/LeapObjectiveC.mm; sourceTree = SOURCE_ROOT; };
+		D0E5244716D2CF7D003C8160 /* MotionControl.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionControl.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E5244A16D2CF7D003C8160 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D0E5244D16D2CF7D003C8160 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D0E5244E16D2CF7D003C8160 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D0E5244F16D2CF7D003C8160 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D08B941416D2D2DB003C817F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D08B941816D2D2DB003C817F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E5244416D2CF7D003C8160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02F191816D32219004F5817 /* libLeap.dylib in Frameworks */,
+				D0E5244B16D2CF7D003C8160 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D08B941916D2D2DB003C817F /* MotionControlHelper */ = {
+			isa = PBXGroup;
+			children = (
+				D02F190D16D31F9C004F5817 /* MotionControlInjector.m */,
+				D08B941A16D2D2DB003C817F /* Supporting Files */,
+			);
+			path = MotionControlHelper;
+			sourceTree = "<group>";
+		};
+		D08B941A16D2D2DB003C817F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D02F190816D31F8D004F5817 /* Info.plist */,
+				D02F190A16D31F8D004F5817 /* Prefix.pch */,
+				D02F190916D31F8D004F5817 /* MotionControlHelper.sdef */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0C919A416D3226900AD3775 /* LeapObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				D0C919A516D3227800AD3775 /* LeapObjectiveC.h */,
+				D0C919A616D3227800AD3775 /* LeapObjectiveC.mm */,
+			);
+			name = LeapObjectiveC;
+			sourceTree = "<group>";
+		};
+		D0E5243E16D2CF7D003C8160 = {
+			isa = PBXGroup;
+			children = (
+				D0E5245016D2CF7D003C8160 /* MotionControl */,
+				D08B941916D2D2DB003C817F /* MotionControlHelper */,
+				D0E5244916D2CF7D003C8160 /* Frameworks */,
+				D0E5244816D2CF7D003C8160 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0E5244816D2CF7D003C8160 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0E5244716D2CF7D003C8160 /* MotionControl.bundle */,
+				D08B941716D2D2DB003C817F /* MotionControlHelper.osax */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0E5244916D2CF7D003C8160 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D02F191716D32219004F5817 /* libLeap.dylib */,
+				D0E5244A16D2CF7D003C8160 /* Cocoa.framework */,
+				D0E5244C16D2CF7D003C8160 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0E5244C16D2CF7D003C8160 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0E5244D16D2CF7D003C8160 /* AppKit.framework */,
+				D0E5244E16D2CF7D003C8160 /* CoreData.framework */,
+				D0E5244F16D2CF7D003C8160 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D0E5245016D2CF7D003C8160 /* MotionControl */ = {
+			isa = PBXGroup;
+			children = (
+				D02F191216D32024004F5817 /* Test.h */,
+				D02F191316D32024004F5817 /* Test.m */,
+				D0C919A416D3226900AD3775 /* LeapObjectiveC */,
+				D0E5245116D2CF7D003C8160 /* Supporting Files */,
+			);
+			path = MotionControl;
+			sourceTree = "<group>";
+		};
+		D0E5245116D2CF7D003C8160 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D02F190F16D31FFE004F5817 /* Info.plist */,
+				D02F191016D31FFE004F5817 /* Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D08B941616D2D2DB003C817F /* MotionControlHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D08B942016D2D2DB003C817F /* Build configuration list for PBXNativeTarget "MotionControlHelper" */;
+			buildPhases = (
+				D08B941316D2D2DB003C817F /* Sources */,
+				D08B941416D2D2DB003C817F /* Frameworks */,
+				D08B941516D2D2DB003C817F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D08B945216D2E2C6003C817F /* PBXTargetDependency */,
+			);
+			name = MotionControlHelper;
+			productName = MotionControlHelper;
+			productReference = D08B941716D2D2DB003C817F /* MotionControlHelper.osax */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D0E5244616D2CF7D003C8160 /* MotionControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0E5245916D2CF7D003C8160 /* Build configuration list for PBXNativeTarget "MotionControl" */;
+			buildPhases = (
+				D0E5244316D2CF7D003C8160 /* Sources */,
+				D0E5244416D2CF7D003C8160 /* Frameworks */,
+				D0E5244516D2CF7D003C8160 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MotionControl;
+			productName = MotionControl;
+			productReference = D0E5244716D2CF7D003C8160 /* MotionControl.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0E5243F16D2CF7D003C8160 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Conrad Kramer";
+			};
+			buildConfigurationList = D0E5244216D2CF7D003C8160 /* Build configuration list for PBXProject "MotionControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0E5243E16D2CF7D003C8160;
+			productRefGroup = D0E5244816D2CF7D003C8160 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0E5244616D2CF7D003C8160 /* MotionControl */,
+				D08B941616D2D2DB003C817F /* MotionControlHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D08B941516D2D2DB003C817F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D08B945016D2E2C2003C817F /* MotionControl.bundle in Resources */,
+				D02F190C16D31F8D004F5817 /* MotionControlHelper.sdef in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E5244516D2CF7D003C8160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D08B941316D2D2DB003C817F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02F190E16D31F9C004F5817 /* MotionControlInjector.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E5244316D2CF7D003C8160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02F191416D32024004F5817 /* Test.m in Sources */,
+				D0C919A716D3227800AD3775 /* LeapObjectiveC.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D08B945216D2E2C6003C817F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0E5244616D2CF7D003C8160 /* MotionControl */;
+			targetProxy = D08B945116D2E2C6003C817F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D08B942116D2D2DB003C817F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Aaron Kramer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Helper/Prefix.pch;
+				INFOPLIST_FILE = Helper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = osax;
+			};
+			name = Debug;
+		};
+		D08B942216D2D2DB003C817F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Aaron Kramer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Helper/Prefix.pch;
+				INFOPLIST_FILE = Helper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = osax;
+			};
+			name = Release;
+		};
+		D0E5245716D2CF7D003C8160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D0E5245816D2CF7D003C8160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D0E5245A16D2CF7D003C8160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Aaron Kramer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				HEADER_SEARCH_PATHS = $PROJECT_DIR/Leap_SDK/include;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = $PROJECT_DIR/Leap_SDK/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D0E5245B16D2CF7D003C8160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Aaron Kramer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				HEADER_SEARCH_PATHS = $PROJECT_DIR/Leap_SDK/include;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = $PROJECT_DIR/Leap_SDK/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D08B942016D2D2DB003C817F /* Build configuration list for PBXNativeTarget "MotionControlHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D08B942116D2D2DB003C817F /* Debug */,
+				D08B942216D2D2DB003C817F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0E5244216D2CF7D003C8160 /* Build configuration list for PBXProject "MotionControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E5245716D2CF7D003C8160 /* Debug */,
+				D0E5245816D2CF7D003C8160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0E5245916D2CF7D003C8160 /* Build configuration list for PBXNativeTarget "MotionControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E5245A16D2CF7D003C8160 /* Debug */,
+				D0E5245B16D2CF7D003C8160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0E5243F16D2CF7D003C8160 /* Project object */;
+}

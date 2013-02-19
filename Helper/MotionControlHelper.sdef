@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="MotionControl Terminology">
+    <suite name="MotionControl Suite" code="MCTL" description="MotionControl commands">
+        <command name="Load MotionControl" code="MCTLLoad" description="Load MotionControl into the Dock application"/>
+    </suite>
+</dictionary>
