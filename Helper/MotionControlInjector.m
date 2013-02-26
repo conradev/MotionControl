@@ -16,7 +16,6 @@ OSErr HandleLoadEvent(const AppleEvent *event, AppleEvent *reply, long refcon) {
     if (![[mainBundle bundleIdentifier] isEqualToString:@"com.apple.dock"]) return errAEEventNotHandled;
     
     NSBundle *helperBundle = [NSBundle bundleForClass:[MotionControlDummyClass class]];
-    
     NSString *motionControlPath = [helperBundle pathForResource:@"MotionControl" ofType:@"bundle"];
     NSBundle *motionControlBundle = [NSBundle bundleWithPath:motionControlPath];
         

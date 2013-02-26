@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		D02F190C16D31F8D004F5817 /* MotionControlHelper.sdef in Resources */ = {isa = PBXBuildFile; fileRef = D02F190916D31F8D004F5817 /* MotionControlHelper.sdef */; };
 		D02F190E16D31F9C004F5817 /* MotionControlInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = D02F190D16D31F9C004F5817 /* MotionControlInjector.m */; };
-		D02F191416D32024004F5817 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = D02F191316D32024004F5817 /* Test.m */; };
 		D02F191816D32219004F5817 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D02F191716D32219004F5817 /* libLeap.dylib */; };
+		D07F8B8816D3D4BC00B540FA /* WVSpaces.mm in Sources */ = {isa = PBXBuildFile; fileRef = D07F8B8716D3D4BC00B540FA /* WVSpaces.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D07F8B8916D416CC00B540FA /* libLeap.dylib in Resources */ = {isa = PBXBuildFile; fileRef = D02F191716D32219004F5817 /* libLeap.dylib */; };
 		D08B941816D2D2DB003C817F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E5244A16D2CF7D003C8160 /* Cocoa.framework */; };
 		D08B945016D2E2C2003C817F /* MotionControl.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D0E5244716D2CF7D003C8160 /* MotionControl.bundle */; };
 		D0C919A716D3227800AD3775 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = D0C919A616D3227800AD3775 /* LeapObjectiveC.mm */; };
@@ -34,12 +35,12 @@
 		D02F190D16D31F9C004F5817 /* MotionControlInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MotionControlInjector.m; path = Helper/MotionControlInjector.m; sourceTree = SOURCE_ROOT; };
 		D02F190F16D31FFE004F5817 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		D02F191016D31FFE004F5817 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = SOURCE_ROOT; };
-		D02F191216D32024004F5817 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Test.h; path = Classes/Test.h; sourceTree = SOURCE_ROOT; };
-		D02F191316D32024004F5817 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Test.m; path = Classes/Test.m; sourceTree = SOURCE_ROOT; };
-		D02F191716D32219004F5817 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = Leap_SDK/lib/libLeap.dylib; sourceTree = SOURCE_ROOT; };
+		D02F191716D32219004F5817 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = LeapSDK/lib/libLeap.dylib; sourceTree = SOURCE_ROOT; };
+		D0562D2416D4F86E006FF97B /* WVSpaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WVSpaces.h; path = Classes/WVSpaces.h; sourceTree = SOURCE_ROOT; };
+		D07F8B8716D3D4BC00B540FA /* WVSpaces.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = WVSpaces.mm; path = Classes/WVSpaces.mm; sourceTree = SOURCE_ROOT; };
 		D08B941716D2D2DB003C817F /* MotionControlHelper.osax */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionControlHelper.osax; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0C919A516D3227800AD3775 /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapObjectiveC.h; path = Leap_SDK/include/LeapObjectiveC.h; sourceTree = SOURCE_ROOT; };
-		D0C919A616D3227800AD3775 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LeapObjectiveC.mm; path = Leap_SDK/include/LeapObjectiveC.mm; sourceTree = SOURCE_ROOT; };
+		D0C919A516D3227800AD3775 /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapObjectiveC.h; path = LeapSDK/include/LeapObjectiveC.h; sourceTree = SOURCE_ROOT; };
+		D0C919A616D3227800AD3775 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LeapObjectiveC.mm; path = LeapSDK/include/LeapObjectiveC.mm; sourceTree = SOURCE_ROOT; };
 		D0E5244716D2CF7D003C8160 /* MotionControl.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionControl.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E5244A16D2CF7D003C8160 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D0E5244D16D2CF7D003C8160 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -138,8 +139,8 @@
 		D0E5245016D2CF7D003C8160 /* MotionControl */ = {
 			isa = PBXGroup;
 			children = (
-				D02F191216D32024004F5817 /* Test.h */,
-				D02F191316D32024004F5817 /* Test.m */,
+				D0562D2416D4F86E006FF97B /* WVSpaces.h */,
+				D07F8B8716D3D4BC00B540FA /* WVSpaces.mm */,
 				D0C919A416D3226900AD3775 /* LeapObjectiveC */,
 				D0E5245116D2CF7D003C8160 /* Supporting Files */,
 			);
@@ -183,6 +184,7 @@
 				D0E5244316D2CF7D003C8160 /* Sources */,
 				D0E5244416D2CF7D003C8160 /* Frameworks */,
 				D0E5244516D2CF7D003C8160 /* Resources */,
+				D07F8B8A16D4170800B540FA /* Fix Linker Paths */,
 			);
 			buildRules = (
 			);
@@ -234,10 +236,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D07F8B8916D416CC00B540FA /* libLeap.dylib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D07F8B8A16D4170800B540FA /* Fix Linker Paths */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fix Linker Paths";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "install_name_tool -change @loader_path/libLeap.dylib @loader_path/../Resources/libLeap.dylib ${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D08B941316D2D2DB003C817F /* Sources */ = {
@@ -252,8 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D02F191416D32024004F5817 /* Test.m in Sources */,
 				D0C919A716D3227800AD3775 /* LeapObjectiveC.mm in Sources */,
+				D07F8B8816D3D4BC00B540FA /* WVSpaces.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,9 +384,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Prefix.pch;
-				HEADER_SEARCH_PATHS = $PROJECT_DIR/Leap_SDK/include;
+				HEADER_SEARCH_PATHS = $PROJECT_DIR/LeapSDK/include;
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = $PROJECT_DIR/Leap_SDK/lib;
+				LIBRARY_SEARCH_PATHS = $PROJECT_DIR/LeapSDK/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = bundle;
@@ -380,9 +400,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Prefix.pch;
-				HEADER_SEARCH_PATHS = $PROJECT_DIR/Leap_SDK/include;
+				HEADER_SEARCH_PATHS = $PROJECT_DIR/LeapSDK/include;
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = $PROJECT_DIR/Leap_SDK/lib;
+				LIBRARY_SEARCH_PATHS = $PROJECT_DIR/LeapSDK/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = bundle;
