@@ -60,16 +60,6 @@ static void initializeLeapController(WVSpaces *self, SEL _cmd) {
     }
 }
 
-static void (*dealloc_orig)(WVSpaces *, SEL);
-static void dealloc(WVSpaces *self, SEL _cmd) {
-    LeapController *controller = objc_getAssociatedObject(self, &controllerKey);
-    [controller removeDelegate:self];
-    [controller release];
-    objc_setAssociatedObject(self, &controllerKey, nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    
-    dealloc(self, _cmd);
-}
-
 #pragma mark - LeapDelegate
 
 static void onConnect(WVSpaces *self, SEL _cmd, LeapController *controller) {
@@ -134,8 +124,6 @@ static __attribute__((constructor)) void initializeHooks() {
 
     // Lifecycle methods
     class_addMethod(spacesClass, @selector(initializeLeapController), (IMP)&initializeLeapController, "v@:");
-    Method deallocMethod = class_getInstanceMethod(spacesClass, @selector(dealloc));
-    dealloc_orig = (void (*)(WVSpaces *, SEL))method_setImplementation(deallocMethod, (IMP)&dealloc);
     
     // Gesture methods
     Method startMethod = class_getInstanceMethod(spacesClass, @selector(fluidGestureStart:));
