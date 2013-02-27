@@ -49,5 +49,5 @@ To inject MotionControl into Dock.app, you can run the following command:
 osascript -e 'tell application "Dock"' -e '«event MCTLLoad»' -e 'end tell'
 ```
 
-Now, to get MotionControl to initialize itself, you have to swipe from space to space using the trackpad. I hope to rid of this requirement in the future as well.
+Now, to get MotionControl to initialize itself, you have to swipe from space to space once using the trackpad. I hope to rid of this requirement in the future as well.
 Once that has been done, Dock.app will now be polling the Leap Motion for swipe events. Enjoy!
