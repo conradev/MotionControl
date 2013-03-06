@@ -30,24 +30,26 @@ cp -r /Volumes/Leap/LeapSDK ./
 Now you are ready to build the project! To build it, simply run the `xcodebuild` command:
 
 ``` sh
-xcodebuild -project MotionControl.xcodeproj -target MotionControlHelper -configuration Release
+xcodebuild -project MotionControl.xcodeproj -target MotionControlLauncher -configuration Release
 ```
 
 ### Installing
 
-Installing and running is currently manual. I have plans to include the helper bundle with an application to both install and inject MotionControl upon launch, but until then, you'll have to do install it manually.
-
-First, you need to copy the helper bundle to `/Library/ScriptingAdditions`:
+Installing is as simple as copying the launcher to your applications folder
 
 ``` sh
-sudo cp -r build/Release/MotionControlHelper.osax /Library/ScriptingAdditions/
+sudo cp -r build/Release/MotionControl.app /Applications/
 ```
 
-To inject MotionControl into Dock.app, you can run the following command:
+Simply run the application, it will prompt you for your password once, and MotionControl will be loaded.
+It is recommended to add the Application as a Login Item, so it loads every time you log in.
 
-``` sh
-osascript -e 'tell application "Dock"' -e '«event MCTLLoad»' -e 'end tell'
-```
+To get MotionControl to initialize itself, you have to swipe from space to space once using the trackpad. I hope to rid of this requirement in the future.
+Once that has been done, Dock.app will now be waiting for Leap Motion swipe gestures. Enjoy!
 
-Now, to get MotionControl to initialize itself, you have to swipe from space to space once using the trackpad. I hope to rid of this requirement in the future as well.
-Once that has been done, Dock.app will now be polling the Leap Motion for swipe events. Enjoy!
+### Uninstalling
+
+To uninstall MotionControl, you have to remove the following files:
+
+- `/Applications/MotionControl.app`
+- `/Library/ScriptingAdditions/MotionControlHelper.osax`
