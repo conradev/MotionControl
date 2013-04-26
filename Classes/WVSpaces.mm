@@ -17,7 +17,8 @@
 - (void)initializeLeapController;
 @end
 
-static char controllerKey;
+LeapController *controller;
+
 static char gestureKey;
 
 #pragma mark - Fluid Gesture Hooks
@@ -47,23 +48,18 @@ static void fluidGestureStop(WVSpaces *self, SEL _cmd, CGSEventRecord record, BO
 
 #pragma mark - Lifecycle
 
-static void initializeLeapController(WVSpaces *self, SEL _cmd) {
-    LeapController *controller = objc_getAssociatedObject(self, &controllerKey);
-    
+static void initializeLeapController(WVSpaces *self, SEL _cmd) {    
     if (controller == nil) {
         controller = [[LeapController alloc] init];
-        [controller enableGesture:LEAP_GESTURE_TYPE_SWIPE enable:YES];
-        [controller addDelegate:self];
-        
-        objc_setAssociatedObject(self, &controllerKey, controller, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-        [controller release];
+        [controller setPolicyFlags:LEAP_POLICY_BACKGROUND_FRAMES];
+        [controller addDelegate:self];        
     }
 }
 
 #pragma mark - LeapDelegate
 
 static void onConnect(WVSpaces *self, SEL _cmd, LeapController *controller) {
-
+    [controller enableGesture:LEAP_GESTURE_TYPE_SWIPE enable:YES];
 }
 
 static void onDisconnect(WVSpaces *self, SEL _cmd, LeapController *controller) {
@@ -76,15 +72,14 @@ static void onDisconnect(WVSpaces *self, SEL _cmd, LeapController *controller) {
 }
 
 static void onFrame(WVSpaces *self, SEL _cmd, LeapController *controller) {
-    
     LeapFrame *currentFrame = [controller frame:0];
     NSNumber *gestureId = objc_getAssociatedObject(self, &gestureKey);
     CGSEventRecord record;
     
     if (!gestureId && !self.anySwitchingOccuring) {
         NSArray *gestures = [currentFrame gestures:nil];
-        NSUInteger index = [gestures indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
-            *stop = [obj isKindOfClass:[LeapSwipeGesture class]];
+        NSUInteger index = [gestures indexOfObjectPassingTest:^BOOL(LeapGesture *gesture, NSUInteger idx, BOOL *stop) {
+            *stop = (gesture.type == LEAP_GESTURE_TYPE_SWIPE);
             return *stop;
         }];
         LeapSwipeGesture *gesture = (index != NSNotFound) ? [gestures objectAtIndex:index] : nil;
@@ -119,7 +114,7 @@ static void onFrame(WVSpaces *self, SEL _cmd, LeapController *controller) {
 
 #pragma mark - Constructor
 
-static __attribute__((constructor)) void initializeHooks() {        
+static __attribute__((constructor)) void constructor() {
     Class spacesClass = objc_getClass("WVSpaces");
 
     // Lifecycle methods

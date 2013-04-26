@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
     id (^version)(NSBundle *) = ^(NSBundle *a) { return [[a infoDictionary] objectForKey:(id)kCFBundleVersionKey]; };
     BOOL (^compareVersion)(NSBundle *, NSBundle *) = ^(NSBundle *a, NSBundle *b) { return [version(a) isEqual:version(b)]; };
     if (!compareVersion(helperBundle, existingHelperBundle) || !compareVersion(mainBundle, existingMainBundle)) {
-        NSString *command = [NSString stringWithFormat:@"rm -rf %@; cp -r %@ %@", existingHelperPath, helperPath, existingHelperPath];
+        NSString *command = [NSString stringWithFormat:@"cp -rf %@ %@", helperPath, existingHelperPath];
         NSString *script =  [NSString stringWithFormat:@"do shell script \"%@\" with administrator privileges", command];
         NSAppleScript *installScript = [[NSAppleScript alloc] initWithSource:script];
         

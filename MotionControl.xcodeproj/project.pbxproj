@@ -13,6 +13,7 @@
 		D045E84016E7251E001B7608 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D045E83F16E7251E001B7608 /* main.m */; };
 		D052283D16E71958008F793C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E5244A16D2CF7D003C8160 /* Cocoa.framework */; };
 		D052285316E719AB008F793C /* MotionControlHelper.osax in Resources */ = {isa = PBXBuildFile; fileRef = D08B941716D2D2DB003C817F /* MotionControlHelper.osax */; };
+		D0773E4B16EEDFDC008D78C9 /* WVExpose.m in Sources */ = {isa = PBXBuildFile; fileRef = D0773E4A16EEDFDC008D78C9 /* WVExpose.m */; };
 		D07F8B8816D3D4BC00B540FA /* WVSpaces.mm in Sources */ = {isa = PBXBuildFile; fileRef = D07F8B8716D3D4BC00B540FA /* WVSpaces.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D07F8B8916D416CC00B540FA /* libLeap.dylib in Resources */ = {isa = PBXBuildFile; fileRef = D02F191716D32219004F5817 /* libLeap.dylib */; };
 		D08B941816D2D2DB003C817F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E5244A16D2CF7D003C8160 /* Cocoa.framework */; };
@@ -51,6 +52,8 @@
 		D045E83F16E7251E001B7608 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Launcher/main.m; sourceTree = SOURCE_ROOT; };
 		D052283C16E71958008F793C /* MotionControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0562D2416D4F86E006FF97B /* WVSpaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WVSpaces.h; path = Classes/WVSpaces.h; sourceTree = SOURCE_ROOT; };
+		D0773E4916EEDFDC008D78C9 /* WVExpose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WVExpose.h; path = Classes/WVExpose.h; sourceTree = SOURCE_ROOT; };
+		D0773E4A16EEDFDC008D78C9 /* WVExpose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WVExpose.m; path = Classes/WVExpose.m; sourceTree = SOURCE_ROOT; };
 		D07F8B8716D3D4BC00B540FA /* WVSpaces.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = WVSpaces.mm; path = Classes/WVSpaces.mm; sourceTree = SOURCE_ROOT; };
 		D08B941716D2D2DB003C817F /* MotionControlHelper.osax */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionControlHelper.osax; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C919A516D3227800AD3775 /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapObjectiveC.h; path = LeapSDK/include/LeapObjectiveC.h; sourceTree = SOURCE_ROOT; };
@@ -183,6 +186,8 @@
 			children = (
 				D0562D2416D4F86E006FF97B /* WVSpaces.h */,
 				D07F8B8716D3D4BC00B540FA /* WVSpaces.mm */,
+				D0773E4916EEDFDC008D78C9 /* WVExpose.h */,
+				D0773E4A16EEDFDC008D78C9 /* WVExpose.m */,
 				D0C919A416D3226900AD3775 /* LeapObjectiveC */,
 				D0E5245116D2CF7D003C8160 /* Supporting Files */,
 			);
@@ -351,6 +356,7 @@
 			files = (
 				D0C919A716D3227800AD3775 /* LeapObjectiveC.mm in Sources */,
 				D07F8B8816D3D4BC00B540FA /* WVSpaces.mm in Sources */,
+				D0773E4B16EEDFDC008D78C9 /* WVExpose.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

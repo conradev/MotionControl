@@ -1,3 +1,11 @@
+//
+//  WVSpaces.h
+//  MotionControl
+//
+//  Created by Conrad Kramer on 2/19/13.
+//  Copyright (c) 2013 Conrad Kramer. All rights reserved.
+//
+
 typedef unsigned long CGSNotificationType;
 typedef void * CGSNotificationData;
 typedef void * CGSNotificationArg;
