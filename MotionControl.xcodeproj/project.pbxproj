@@ -411,6 +411,7 @@
 				INFOPLIST_FILE = Helper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = osax;
 			};
 			name = Debug;
@@ -424,6 +425,7 @@
 				INFOPLIST_FILE = Helper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = osax;
 			};
 			name = Release;
